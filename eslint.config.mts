@@ -11,20 +11,20 @@ export default defineConfig([
 		files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
 		plugins: { js },
 		extends: ['js/recommended'],
-		languageOptions: { globals: { ...globals.browser, ...globals.node } },
+		languageOptions: { globals: { ...globals.browser, ...globals.node } }
 	},
 	tseslint.configs.recommended,
 	{
 		files: ['**/*.json', '**/*.jsonc'],
 		plugins: { json },
 		language: 'json/jsonc',
-		extends: ['json/recommended'],
+		extends: ['json/recommended']
 	},
 	{
 		files: ['**/*.md'],
 		plugins: { markdown },
 		language: 'markdown/gfm',
-		extends: ['markdown/recommended'],
+		extends: ['markdown/recommended']
 	},
-	eslintConfigPrettier,
+	eslintConfigPrettier
 ]);

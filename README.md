@@ -7,7 +7,7 @@ A Blueprint for the knowledge base for RAG
 - 工程化
     - 包管理：pnpm 11 + workspace，Monorepo 模式
     - 代码风格：ESLint
-	- 代码格式化：Prettier + EditorConfig
+    - 代码格式化：Prettier + EditorConfig
     - Pre-Commit：Husky + lint-staged（对暂存文件生效）
 - 前端：React 19 + Vite + TypeScript + Antd
 - 后端：Fastify + TypeScript

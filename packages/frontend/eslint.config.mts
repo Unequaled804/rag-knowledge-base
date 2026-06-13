@@ -12,11 +12,11 @@ export default defineConfig([
 		files: ['**/*.{ts,tsx}'],
 		extends: [
 			reactHooks.configs.flat.recommended,
-			reactRefresh.configs.vite,
+			reactRefresh.configs.vite
 		],
 		languageOptions: {
-			globals: globals.browser,
-		},
+			globals: globals.browser
+		}
 	},
 	{
 		files: ['**/*.css'],
@@ -25,7 +25,7 @@ export default defineConfig([
 		extends: ['css/recommended'],
 		rules: {
 			'css/use-baseline': 'off',
-			'css/no-invalid-properties': 'off',
+			'css/no-invalid-properties': 'off'
 		}
 	}
 ]);
