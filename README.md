@@ -11,5 +11,5 @@ A Blueprint for the knowledge base for RAG
     - Pre-Commit：Husky + lint-staged（对暂存文件生效）
 - 前端：React 19 + Vite + TypeScript + Antd
 - 后端：Fastify + TypeScript
-- 数据库：PostgreSQL + pgvector（向量存储）+ Prisma（ORM）
+- 数据库：PostgreSQL 18 + pgvector（向量存储）+ Prisma（ORM）
 - 部署：Docker Compose
