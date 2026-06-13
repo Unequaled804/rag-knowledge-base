@@ -5,7 +5,9 @@
 	"scripts": {
 		"lint": "pnpm -r lint",
 		"format": "prettier . --write",
-		"format:check": "prettier . --check"
+		"format:check": "prettier . --check",
+		"prepare": "husky",
+		"pre-commit": "lint-staged"
 	},
 	"keywords": [],
 	"author": "Quan Zhou",
@@ -19,9 +21,20 @@
 		"eslint": "^10.5.0",
 		"eslint-config-prettier": "^10.1.8",
 		"globals": "^17.6.0",
+		"husky": "^9.1.7",
 		"jiti": "^2.7.0",
+		"lint-staged": "^17.0.7",
 		"prettier": "^3.8.4",
 		"typescript": "^6.0.3",
 		"typescript-eslint": "^8.61.0"
+	},
+	"lint-staged": {
+		"*.{ts,tsx,js,mjs,cjs}": [
+			"eslint --fix",
+			"prettier --write"
+		],
+		"*.{json,jsonc,css,md,yaml,yml,html}": [
+			"prettier --write"
+		]
 	}
 }
