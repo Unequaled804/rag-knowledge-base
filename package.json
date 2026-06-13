@@ -1,0 +1,16 @@
+{
+  "name": "rag-knowledge-base",
+  "version": "0.1.0",
+  "description": "A RAG knowledge base for LLMs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Quan Zhou",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^10.5.0",
+    "typescript": "^6.0.3"
+  }
+}
