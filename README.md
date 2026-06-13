@@ -1,15 +1,26 @@
 # rag-knowledge-base
 
-A Blueprint for the knowledge base for RAG
+A blueprint for building a RAG-based knowledge base.
 
-## 技术选型
+## 🛠️ Tech Stack
 
-- 工程化
-    - 包管理：pnpm 11 + workspace，Monorepo 模式
-    - 代码风格：ESLint
-    - 代码格式化：Prettier + EditorConfig
-    - Pre-Commit：Husky + lint-staged（对暂存文件生效）
-- 前端：React 19 + Vite + TypeScript + Antd
-- 后端：Fastify + TypeScript
-- 数据库：PostgreSQL 18 + pgvector（向量存储）+ Prisma（ORM）
-- 部署：Docker Compose
+### Frontend
+
+- **Architecture:** React 19 + Vite + TypeScript + Ant Design
+- **Monorepo & Package Management:** pnpm 11 with pnpm workspaces
+- **React Ecosystem:**
+    - **Data Fetching & Caching:** _TBC_
+    - **Error Handling:** `react-error-boundary`
+    - **Routing:** _TBC_
+    - **State Management:** _TBC_
+- **Linting & Formatting:** ESLint + Prettier + EditorConfig
+- **Git Hooks:** Husky + lint-staged
+
+### Backend
+
+- **Framework:** Fastify + TypeScript
+- **Database & ORM:** PostgreSQL 18 + `pgvector` (for vector storage) + Prisma ORM
+
+### DevOps/CI/CD
+
+- **Containerization:** Docker Compose
