@@ -11,7 +11,15 @@ export default defineConfig([
 		files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
 		plugins: { js },
 		extends: ['js/recommended'],
-		languageOptions: { globals: { ...globals.browser, ...globals.node } }
+		languageOptions: {
+			globals: { ...globals.browser, ...globals.node },
+			parserOptions: {
+				projectService: {
+					allowDefaultProject: ['eslint.config.mts']
+				},
+				tsconfigRootDir: import.meta.dirname
+			}
+		}
 	},
 	tseslint.configs.recommended,
 	{
