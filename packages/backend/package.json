@@ -1,0 +1,24 @@
+{
+	"name": "@rag-kb/backend",
+	"version": "0.1.0",
+	"description": "The backend for the RAG knowledge base",
+	"scripts": {
+		"dev": "tsx watch index.ts",
+		"build": "tsc",
+		"start": "node dist/index.js",
+		"lint": "eslint .",
+		"format": "prettier . --write",
+		"format:check": "prettier . --check"
+	},
+	"author": "Quan Zhou",
+	"license": "MIT",
+	"type": "module",
+	"dependencies": {
+		"fastify": "^5.8.5"
+	},
+	"devDependencies": {
+		"@types/node": "^24.13.2",
+		"tsx": "^4.22.4"
+	},
+	"private": true
+}

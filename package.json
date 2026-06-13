@@ -1,16 +1,27 @@
 {
-  "name": "rag-knowledge-base",
-  "version": "0.1.0",
-  "description": "A RAG knowledge base for LLMs",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Quan Zhou",
-  "license": "MIT",
-  "private": true,
-  "devDependencies": {
-    "eslint": "^10.5.0",
-    "typescript": "^6.0.3"
-  }
+	"name": "rag-knowledge-base",
+	"version": "0.1.0",
+	"description": "A RAG knowledge base for LLMs",
+	"scripts": {
+		"lint": "pnpm -r lint",
+		"format": "prettier . --write",
+		"format:check": "prettier . --check"
+	},
+	"keywords": [],
+	"author": "Quan Zhou",
+	"license": "MIT",
+	"private": true,
+	"devDependencies": {
+		"@eslint/css": "^1.3.0",
+		"@eslint/js": "^10.0.1",
+		"@eslint/json": "^2.0.0",
+		"@eslint/markdown": "^8.0.2",
+		"eslint": "^10.5.0",
+		"eslint-config-prettier": "^10.1.8",
+		"globals": "^17.6.0",
+		"jiti": "^2.7.0",
+		"prettier": "^3.8.4",
+		"typescript": "^6.0.3",
+		"typescript-eslint": "^8.61.0"
+	}
 }
