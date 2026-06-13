@@ -37,5 +37,5 @@
 		"moduleDetection": "force",
 		"skipLibCheck": true
 	},
-	"include": ["index.ts", "eslint.config.ts"]
+	"include": ["**/*.ts"]
 }

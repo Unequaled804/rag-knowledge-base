@@ -1,0 +1,52 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+    provider = "prisma-client"
+    output   = "../generated/prisma"
+}
+
+datasource db {
+    provider = "postgresql"
+}
+
+enum Role {
+    USER
+    ADMIN
+}
+
+enum DocumentStatus {
+    PENDING
+    PROCESSING
+    READY
+    FAILED
+}
+
+model User {
+    id        String     @id @default(uuid())
+    email     String     @unique
+    password  String
+    role      Role       @default(USER)
+    createdAt DateTime   @default(now())
+    updatedAt DateTime   @updatedAt
+    documents Document[]
+
+    @@map("users")
+}
+
+model Document {
+    id         String         @id @default(uuid())
+    filename   String
+    mimeType   String
+    size       Int
+    path       String
+    status     DocumentStatus @default(PENDING)
+    createdAt  DateTime       @default(now())
+    updatedAt  DateTime       @updatedAt
+    uploader   User           @relation(fields: [uploaderId], references: [id])
+    uploaderId String         @unique
+
+    @@map("documents")
+}
