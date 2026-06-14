@@ -11,7 +11,7 @@ A blueprint for building a RAG-based knowledge base.
 - **React Ecosystem:**
     - **Data Fetching & Caching:** _TBC_
     - **Error Handling:** `react-error-boundary`
-    - **Routing:** _TBC_
+    - **Routing:** React Router
     - **State Management:** _TBC_
 - **Linting & Formatting:** ESLint + Prettier + EditorConfig
 - **Git Hooks:** Husky + lint-staged
@@ -24,3 +24,5 @@ A blueprint for building a RAG-based knowledge base.
 ### DevOps/CI/CD
 
 - **Containerization:** Docker Compose
+
+## Roadmap
